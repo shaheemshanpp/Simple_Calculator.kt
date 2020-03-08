@@ -1,8 +1,8 @@
 package cantThinkOfAName
 
 fun main(args: Array<String>) {
-    var x1 = 1
-    while (x1 == 1) {
+    var repeat = 1
+    while (repeat == 1) {
         println("Enter 2 Numbers : ")
         var n1 = readLine()!!.toInt()
         var n2 = readLine()!!.toInt()
@@ -25,16 +25,10 @@ fun main(args: Array<String>) {
                     "Enter 1 for yes" +
                     "wnter 0 for no"
         )
-        var x = readLine()!!.toInt()
-        if(x==1){
-        x1=1
-        }
-        else if (x==0){
-            x1=0
-        }
-        else{
+        repeat = readLine()!!.toInt()
+        if(repeat!==1){
             println("Wrong Input, and Terminating the program")
-            x1=0
+            repeat=0
         }
     }
 }
